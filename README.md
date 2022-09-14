@@ -1,13 +1,17 @@
 # 4D-StOP
 
-This repository contains the official code for the following paper:
+Official code for the paper "4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation".
 
-**4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation**  
+<!--This repository contains the official code for the following paper:-->
+
+<!--**4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation**  
 Lars Kreuzberg, Idil Esen Zulfikar, Sabarinath Mahadevan, Francis Engelmann and Bastian Leibe  
 Accepted to Advanced Autonomous Driving Workshop at ECCV 2022
-<!--arxiv-->
+arxiv-->
 
 In this work, we present a new paradigm called 4D-StOP to tackle the task of 4D Panoptic LiDAR Segmentation. 4D-StOP first generates spatio-temporal proposals using voting based center predictions, where each point in the 4D volume votes for a corresponding center. These tracklet proposals are further aggregated using learnt geometric features. The tracklet aggregation method effectively generates a video level 4D scene representation over the entire space-time volume. This is in contrast to the existing end-to-end trainable state-of-the-art approach which uses spatio-temporal embeddings that are represented by Gaussian probability functions. Our voting-based tracklet generation method followed by the geometric feature based aggregation technique generates a much better panoptic LiDAR segmentation quality as compared to modelling the entire 4D volume using Gaussian probabilities. 4D-StOP achieves a new state-of-the-art when applied to the SemanticKITTI test dataset with a score of 63.9 LSTQ.<!--, which is a large (+7%) improvement when compared to the current best performing end-to-end trainable method.-->
+
+4D-StOP is accepted at the ECCV 2022 [AVVision Workshop](https://avvision.xyz/eccv22/).
 
 <!--This repository contains the official code for the paper "4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation", which is accepted to the Advanced Autonomous Driving Workshop at ECCV 2022.-->
 
@@ -56,7 +60,6 @@ Use `train_SemanticKitti.py` for training. Adapt the config parameters like you 
 ## Testing, Tracking and Evaluating
 We provide an example script in `jobscript_test.sh`. You need to adapt the paths here. It executes `test_models.py` to generate the semantic and instance predictions within a 4D volume. In `test_models.py` you need to set config parameters and choose the model you want to test. To track instances across 4D volumes, `stitch_tracklets.py` is executed. To get the evaluation results `utils/evaluate_4dpanoptic.py` is used. We test our models on a single NVIDIA TitanX (12GB) GPU.
 
-<!--
 ## Citation
 If you find our work useful in your research, please consider citing:
 ```
@@ -67,7 +70,6 @@ If you find our work useful in your research, please consider citing:
   year={2022}
 }
 ```
--->
 
 ## Acknowledgments
 The code is based on the Pytoch implementation of [4D-PLS](https://github.com/MehmetAygun/4D-PLS), [KPConv](https://github.com/HuguesTHOMAS/KPConv-PyTorch) and [VoteNet](https://github.com/facebookresearch/votenet).

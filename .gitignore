@@ -1,0 +1,8 @@
+*.pyc
+*.so
+*.o
+visualizations/
+runs/
+outputs/
+*.egg
+pointnet2.egg-info/

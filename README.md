@@ -6,9 +6,9 @@ Official code for 4D-StOP ([ECCV 2022 AVVision Workshop](https://avvision.xyz/ec
 
 [Lars Kreuzberg](), [Idil Esen Zulfikar](https://www.vision.rwth-aachen.de/person/245/), [Sabarinath Mahadevan](https://www.vision.rwth-aachen.de/person/218/), [Francis Engelmann](https://francisengelmann.github.io/) and [Bastian Leibe](https://www.vision.rwth-aachen.de/person/1/)
 
-ECCV 2022 AVVision Workshop | [Paper] () | [Project Page] ()
+ECCV 2022 AVVision Workshop | [Paper] ()
 
-![Teaser Image](images/overview.pdf)
+![Teaser Image](images/overview.png)
 
 <!--Official code for the paper "4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation".-->
 

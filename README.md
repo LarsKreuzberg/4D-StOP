@@ -66,7 +66,7 @@ If you find our work useful in your research, please consider citing:
 @inproceedings{kreuzberg2022stop,
   title={4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation},
   author={Kreuzberg, Lars and Zulfikar, Idil Esen and Mahadevan,Sabarinath and Engelmann, Francis and Leibe, Bastian},
-  booktitle={In European Conference on Computer Vision Workshop},
+  booktitle={European Conference on Computer Vision Workshop},
   year={2022}
 }
 ```

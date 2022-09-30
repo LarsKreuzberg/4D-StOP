@@ -6,7 +6,7 @@ Official code for 4D-StOP ([ECCV 2022 AVVision Workshop](https://avvision.xyz/ec
 
 [Lars Kreuzberg](), [Idil Esen Zulfikar](https://www.vision.rwth-aachen.de/person/245/), [Sabarinath Mahadevan](https://www.vision.rwth-aachen.de/person/218/), [Francis Engelmann](https://francisengelmann.github.io/) and [Bastian Leibe](https://www.vision.rwth-aachen.de/person/1/)
 
-ECCV 2022 AVVision Workshop | [Paper](https://francisengelmann.github.io/eccv_22_4dstop.pdf)
+ECCV 2022 AVVision Workshop | [Paper](https://arxiv.org/abs/2209.14858)
 
 ![Teaser Image](images/overview.png)
 

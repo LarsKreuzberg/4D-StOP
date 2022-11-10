@@ -4,7 +4,7 @@ Official code for 4D-StOP ([ECCV 2022 AVVision Workshop](https://avvision.xyz/ec
 
 **4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation**
 
-[Lars Kreuzberg](), [Idil Esen Zulfikar](https://www.vision.rwth-aachen.de/person/245/), [Sabarinath Mahadevan](https://www.vision.rwth-aachen.de/person/218/), [Francis Engelmann](https://francisengelmann.github.io/) and [Bastian Leibe](https://www.vision.rwth-aachen.de/person/1/)
+[Lars Kreuzberg](https://github.com/LarsKreuzberg), [Idil Esen Zulfikar](https://www.vision.rwth-aachen.de/person/245/), [Sabarinath Mahadevan](https://www.vision.rwth-aachen.de/person/218/), [Francis Engelmann](https://francisengelmann.github.io/) and [Bastian Leibe](https://www.vision.rwth-aachen.de/person/1/)
 
 ECCV 2022 AVVision Workshop | [Paper](https://arxiv.org/abs/2209.14858)
 
@@ -68,7 +68,9 @@ Log_2022-06-17_12-16-59 -> 4-scan setup
 Use `train_SemanticKitti.py` for training. Adapt the config parameters like you wish. Importantly, set the paths for the dataset-folder, checkpoints-folders etc. In the experiments in our paper, we first train the model for 800 epochs setting `config.pre_train = True`. Then we train for further 300 epochs with `config.pre_train = False` and `config.freeze = True`. We train our models on a single NVIDIA A40 (48GB) GPU.
 
 ## Testing, Tracking and Evaluating
-We provide an example script in `jobscript_test.sh`. You need to adapt the paths here. It executes `test_models.py` to generate the semantic and instance predictions within a 4D volume. In `test_models.py` you need to set config parameters and choose the model you want to test. To track instances across 4D volumes, `stitch_tracklets.py` is executed. To get the evaluation results `utils/evaluate_4dpanoptic.py` is used. We test our models on a single NVIDIA TitanX (12GB) GPU.
+We provide an example script in `jobscript_test.sh`. You need to adapt the paths here. It executes `test_models.py` to generate the semantic and instance predictions within a 4D volume. In `test_models.py` you need to set config parameters and choose the model you want to test. To track instances across 4D volumes, `stitch_tracklets.py` is executed. To get the evaluation results `utils/evaluate_4dpanoptic.py` is used. We test our models on a single NVIDIA TitanX (12GB) GPU. 
+
+You can find a trained model for 2-scan-setup [here](https://drive.google.com/file/d/15Ko_Xjjf49F1A58zpG99HIBsaidJrOMM/view?usp=sharing). 
 
 ## Citation
 If you find our work useful in your research, please consider citing:

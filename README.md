@@ -70,7 +70,7 @@ Use `train_SemanticKitti.py` for training. Adapt the config parameters like you 
 ## Testing, Tracking and Evaluating
 We provide an example script in `jobscript_test.sh`. You need to adapt the paths here. It executes `test_models.py` to generate the semantic and instance predictions within a 4D volume. In `test_models.py` you need to set config parameters and choose the model you want to test. To track instances across 4D volumes, `stitch_tracklets.py` is executed. To get the evaluation results `utils/evaluate_4dpanoptic.py` is used. We test our models on a single NVIDIA TitanX (12GB) GPU. 
 
-You can find a trained model for 2-scan-setup [here](https://drive.google.com/file/d/15Ko_Xjjf49F1A58zpG99HIBsaidJrOMM/view?usp=sharing). 
+You can find a trained model for 2-scan-setup [here](https://drive.google.com/file/d/10NPZobGG3H_kqgVknDXAAela6rTAvWyB/view?usp=sharing). 
 
 ## Citation
 If you find our work useful in your research, please consider citing:
